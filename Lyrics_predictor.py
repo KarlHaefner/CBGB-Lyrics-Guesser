@@ -50,6 +50,7 @@ def vectorize(df_train):
 def fit_model(vec2_train, df_train):
     X = vec2_train
     y = df_train['label']
+
     m = MultinomialNB()
     m.fit(X, y)
 
