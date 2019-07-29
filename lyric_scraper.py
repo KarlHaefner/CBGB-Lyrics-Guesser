@@ -29,5 +29,6 @@ class LyricSpider(scrapy.Spider):
         artist = response.xpath('//h3[@class="lyric-artist"]/a/text()').get()
 
         print(lyrics)
+        print('\n\n\n')
         print(artist)
         print('\n\n\n')
