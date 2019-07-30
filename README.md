@@ -3,8 +3,10 @@ Small program that guesses which CBGB-artist wrote given lyrics. All lyrics by f
 
 Contents:
   - Scraper(ScraPy): lyrics_scraper_clean.py
+    
     run with: scrapy runspider -o output_lyrics.csv -L WARNING lyrics_scraper_clean.py
   - Predictor: lyrics_predictor.py
+    
     based on naive bayes
 
 The artists and the corresponding lyric sites are hard coded.
