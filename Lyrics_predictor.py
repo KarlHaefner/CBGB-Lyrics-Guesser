@@ -79,12 +79,10 @@ def plot_heatmap(df_test):
 
 #--------------------------------------------
 
-def main():
+if __name__ == "__main__":
     df = pd.read_csv('output_lyrics.csv')
     df_train, df_test = create_train_test_df(df)
     cv, tf, vec2_train = vectorize(df_train)
     m = fit_model(vec2_train, df_train)
     df_test = prediction(df_test, cv, tf, m)
     plot_heatmap(df_test)
-
-main()
